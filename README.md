@@ -125,6 +125,9 @@ pip install torch torchvision numpy pillow gdown
 
 ### Usage
 
+- Colab: `attention_mil_colab.ipynb` 위에서부터 실행 (`%%writefile`로 .py 생성 → 실행). Colon 데이터는 노트북 안 `gdown`으로 다운로드
+- 로컬: 아래 순서
+
 MNIST-bags
 
 ```bash
@@ -148,6 +151,7 @@ python verify_attention_colon.py
 
 ```
 .
+├── attention_mil_colab.ipynb     # Colab 실행 기록 (아래 .py 생성·실행, 출력 포함)
 ├── mil_model.py                  # Attention MIL 모델
 ├── mnist_bags.py                 # MNIST-bags 합성 데이터셋 (instance별 숫자 라벨 포함)
 ├── train.py                      # MNIST-bags 학습·평가
